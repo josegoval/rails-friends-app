@@ -2,13 +2,32 @@
 
 <h1>Friends</h1>
 
-<div id="friends">
-  <% @friends.each do |friend| %>
-    <%= render friend %>
-    <p>
-      <%= link_to "Show this friend", friend %>
-    </p>
-  <% end %>
-</div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Twitter</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @friends.each do |friend| %>
+    <tr>
+      <td><%= friend.first_name %></td>
+      <td><%= friend.last_name %></td>
+      <td><%= friend.phone %></td>
+      <td><%= friend.twitter %></td>
+      <td>
+        <div class="d-flex gap-2">
+          <%= link_to "Details", friend, class: "btn btn-primary" %>
+          <%= button_to "Delete", friend, method: :delete, class: "btn btn-danger" %>
+        </div>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
 
-<%= link_to "New friend", new_friend_path %>
+<%= link_to "New friend", new_friend_path, class: "btn btn-primary" %>
