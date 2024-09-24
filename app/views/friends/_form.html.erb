@@ -12,26 +12,26 @@
   <% end %>
 
   <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+    <%= form.label :first_name, class: "form-label" %>
+    <%= form.text_field :first_name, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+    <%= form.label :last_name, class: "form-label" %>
+    <%= form.text_field :last_name, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+    <%= form.label :phone, class: "form-label" %>
+    <%= form.text_field :phone, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
+    <%= form.label :twitter, class: "form-label" %>
+    <%= form.text_field :twitter, class: "form-control" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary mt-3" %>
   </div>
 <% end %>
