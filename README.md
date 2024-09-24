@@ -26,3 +26,5 @@ Things you may want to cover:
 ## To check
 
 * Testing
+* <https://guides.rubyonrails.org/api_app.html>
+* Ruby for API only applications
