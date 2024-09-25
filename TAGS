@@ -48,6 +48,6 @@ module ApplicationCableApplicationCable3,0
   class ConnectionTest < ActionCable::Connection::TestCaseApplicationCable::ConnectionTest4,0
 
 config/application.rb,143
-module BlogBlog9,0
+module FriendsAppFriendsApp9,0
   class Application < Rails::ApplicationApplication10,0
-  class Application < Rails::ApplicationBlog::Application10,0
+  class Application < Rails::ApplicationFriendsApp::Application10,0
